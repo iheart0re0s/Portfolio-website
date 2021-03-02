@@ -173,19 +173,27 @@ a:active {
   max-width: 250px;
 }
 
-nav>ul {
+nav > ul {
   list-style-type: none;
   padding: 0;
 }
 
-nav>ul>li {
+nav > ul > li {
   display: inline-block;
   width: 100%
 }
 
-nav>ul>li>a {
+nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #4fafc0;
+}
+.social {
+  text-align: center;
+}
+.social a {
+  display: inline-block;
+  width: 50px;
+  margin: 0 5px;
 }
