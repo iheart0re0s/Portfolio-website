@@ -5,18 +5,40 @@ Secondary Color (Turquoise): #6ebfd6;
 Secondary Color (Coral): e8716d;
 Text Color (Grey): #4c4c4f;
 */
+* {
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #ffffff;
+  padding: 10px;
+  margin: 10px;
+  border-bottom: 3px solid #6ebfd6;
+  text-align: center;
+  -webkit-box-shadow: 4px 4px 10px 0px rgba(50, 50, 50, 0.76);
+  -moz-box-shadow: 4px 4px 10px 0px rgba(50, 50, 50, 0.76);
+  box-shadow: 4px 4px 10px 0px rgba(50, 50, 50, 0.76);
+  position: relative;
+}
+main {
+  padding-top: 133px;
+}
 body {
   background-color: #ffffff;
   font-family: 'Lato', sans-serif;
-  font-size: 16px; /* Sets the font size to 16px */
-  font-weight: 300; /* Sets the font weight to 300 */
-  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  font-size: 16px;
+  /* Sets the font size to 16px */
+  font-weight: 300;
+  /* Sets the font weight to 300 */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 * the font-size */
   color: #4c4c4f;
 }
 
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
+
 h1 {
   font-size: 28pt;
   font-weight: 700;
@@ -31,42 +53,58 @@ h3 {
   font-size: 18pt;
   font-weight: 400;
 }
+
 h4 {
   font-size: 16pt;
   font-weight: 400;
 }
+
 img {
   width: 100%;
 }
+
 a {
   color: #4fafc0;
-  text-decoration: none; /* No underlining */
+  text-decoration: none;
+  /* No underlining */
 }
+
 a:hover,
 a:focus {
   color: #e8716d;
-  text-decoration: underline; /* Underlining when hovering over a link */
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
 }
-a:active { /* selected link */
+
+a:active {
+  /* selected link */
   color: #6ebfd6;
 }
+
 .button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #6ebfd6;
-  color: #ffffff; /* needed to override the default link color */
+  color: #ffffff;
+  /* needed to override the default link color */
   font-weight: 400;
   padding: 10px 20px 10px 20px;
   border-radius: 21px;
   transition: 0.2s opacity;
 }
+
 .button:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
+
 .button:active {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
   text-decoration: none
 }
+
 .button.contact {
   background-color: transparent;
   color: #e8716d;
@@ -74,10 +112,12 @@ a:active { /* selected link */
   border-radius: 21px;
   padding: 10px 20px 10px 20px;
 }
+
 .button.contact:hover {
   background-color: #e8716d;
   color: #ffffff;
 }
+
 .cv-button {
   background: #4fafc0;
   background-image: -webkit-linear-gradient(top, #4fafc0, #2980b9);
@@ -94,6 +134,58 @@ a:active { /* selected link */
   padding: 10px 20px 10px 20px;
   text-decoration: none;
 }
+
 .cv-button:hover {
   background: #e8716d;
   text-decoration: none;
+}
+
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
+}
+
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
+}
+
+#hero h1 {
+  text-align: center;
+  /* Centers text */
+}
+
+#hero {
+  background-color: #f1f2f2;
+  padding: 20px 0;
+}
+
+.center {
+  text-align: center;
+}
+
+.logo {
+  max-width: 250px;
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav>ul>li {
+  display: inline-block;
+  width: 100%
+}
+
+nav>ul>li>a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4fafc0;
+}
