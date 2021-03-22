@@ -11,8 +11,7 @@ Text Color (Grey): #4c4c4f;
 
 header {
   background-color: #ffffff;
-  padding: 10px;
-  text-align: center;
+  padding: 10px 0 4px;
   -webkit-box-shadow: 4px 4px 10px 0px rgba(50, 50, 50, 0.76);
   -moz-box-shadow: 4px 4px 10px 0px rgba(50, 50, 50, 0.76);
   box-shadow: 4px 4px 10px 0px rgba(50, 50, 50, 0.76);
@@ -21,7 +20,7 @@ header {
 }
 
 main {
-  padding-top: 210px;
+  padding-top: 56px;
 }
 
 body {
@@ -176,17 +175,11 @@ a:active {
   text-align: center;
 }
 
-.logo {
-  max-width: 250px;
-}
 
 nav>ul {
   list-style-type: none;
   padding: 0;
-}
-
-nav>ul>li {
-  display: inline-block;
+  margin: 0;
 }
 
 nav>ul>li>a {
@@ -252,6 +245,30 @@ footer {
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
+.navtoggle li:not(:last-child) {
+display: none;
+}
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding: 0;
+}
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+ display: block;
+ padding: 10px 0;
+ border-top: 1px solid rgba(255,127,80,0.5);
+}
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
 
 /* ==============================
 Medium devices (640px and larger)
@@ -264,13 +281,7 @@ Medium devices (640px and larger)
   }
 
   main {
-    padding-top: 120px
-  }
-
-  nav {
-    width: auto;
-    float: right;
-    margin-top: 4px;
+    padding-top: 300px
   }
 
   #hero span {
@@ -287,6 +298,16 @@ Medium devices (640px and larger)
     float: left;
     padding: 10px;
   }
+  nav>ul>li {
+    display: inline-block;
+    min-width: 641px;
+  }
+  nav > ul {
+  margin: 1em 0;
+}
+.navtoggle li:not(:last-child) {
+  display: none;
+}
 }
 
 
@@ -312,7 +333,14 @@ Large devices (1024px or larger)
     margin-left: auto;
     margin-right: auto;
   }
+  .navtoggle li:not(:last-child) {
+ display: inline-block;
 }
+  .navtoggle li:last-child {
+  display: none;
+}
+}
+
 
 /* ==============================
 X-large devices (1440px or larger)
