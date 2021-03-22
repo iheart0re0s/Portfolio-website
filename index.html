@@ -8,18 +8,21 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/521b54340c.js" crossorigin="anonymous"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
   <header>
     <div id="header" class="container">
-      <img src="img/header-logo/NameLogo.png" alt="Ashley Fischer" class="logo">
+      <div class="navtoggle" id="myNavtoggle">
+      <img src="img/header-logo/NameLogo.png" alt="Ashley Fischer UI Logo" class="logo">
       <nav class="navlinks">
         <ul>
           <li><a href="index.html">Work</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a></li>
         </ul>
       </nav>
     </div>
