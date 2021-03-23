@@ -313,7 +313,7 @@ Medium devices (640px and larger)
   }
 
   main {
-    padding-top: 275px;
+    padding-top: 100px;
   }
 
   #hero span {
@@ -378,7 +378,9 @@ Large devices (1024px or larger)
   .col-lg-12 {
     width: 100%;
   }
-
+  main {
+    padding-top: 100px;
+  }
   .container {
     max-width: 1200px;
     margin-left: auto;
@@ -392,9 +394,14 @@ Large devices (1024px or larger)
   .navtoggle li:last-child {
     display: none;
   }
+
 }
 
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {}
+@media only screen and (min-width: 1440px) {
+  main {
+    padding-top: 100px;
+  }
+}
