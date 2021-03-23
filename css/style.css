@@ -65,6 +65,11 @@ h5 {
   font-weight: 200;
 }
 
+#myphoto {
+  max-width: 650px;
+  min-width: 500px;
+}
+
 img {
   width: 100%;
 }
