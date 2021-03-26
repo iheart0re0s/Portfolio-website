@@ -1,8 +1,8 @@
 /*
 Colors used:
-Primary Color (Teal): #4fafc0;
+Primary Color (Teal): #40A1B3;
 Secondary Color (Turquoise): #6ebfd6;
-Secondary Color (Coral): e8716d;
+Secondary Color (Coral): E8706C;
 Text Color (Grey): #4c4c4f;
 */
 * {
@@ -20,7 +20,7 @@ header {
 }
 
 main {
-  padding-top: 50px;
+  padding-top: 70px;
 }
 
 body {
@@ -47,7 +47,7 @@ h1 {
 h2 {
   font-size: 22pt;
   font-weight: 700;
-  color: #4fafc0;
+  color: #40A1B3;
 }
 
 h3 {
@@ -63,11 +63,12 @@ h4 {
 h5 {
   font-size: 22pt;
   font-weight: 200;
+  text-align: center;
 }
 
 #myphoto {
   max-width: 650px;
-  min-width: 500px;
+  min-width: 300px;
 }
 
 img {
@@ -75,14 +76,14 @@ img {
 }
 
 a {
-  color: #4fafc0;
+  color: #40A1B3;
   text-decoration: none;
   /* No underlining */
 }
 
 a:hover,
 a:focus {
-  color: #e8716d;
+  color: #E8706C;
   text-decoration: underline;
   /* Underlining when hovering over a link */
 }
@@ -98,7 +99,7 @@ a:active {
   background-color: #6ebfd6;
   color: #ffffff;
   /* needed to override the default link color */
-  font-weight: 400;
+  font-weight: 600;
   padding: 10px 20px 10px 20px;
   border-radius: 21px;
   transition: 0.2s opacity;
@@ -119,31 +120,32 @@ a:active {
 
 .button.contact {
   background-color: transparent;
-  color: #e8716d;
-  border: 2px solid #e8716d;
+  color: #E8706C;
+  border: 2px solid #E8706C;
   border-radius: 21px;
   padding: 10px 20px 10px 20px;
 }
 
 .button.contact:hover {
-  background-color: #e8716d;
+  background-color: #E8706C;
   color: #ffffff;
 }
 
 .cv-button {
-  background: #4fafc0;
+  background: #40A1B3;
   -webkit-border-radius: 21;
   -moz-border-radius: 21;
   border-radius: 21px;
   color: #ffffff;
   font-size: 18px;
-  background: #4fafc0;
+  font-weight: 600;
+  background: #40A1B3;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
 }
 
 .cv-button:hover {
-  background: #e8716d;
+  background: #E8706C;
   text-decoration: none;
   color: #ffffff;
 }
@@ -191,7 +193,7 @@ nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #4fafc0;
+  color: #40A1B3;
 }
 
 .logo {
